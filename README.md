@@ -56,7 +56,7 @@ Below is the documentation for the API endpoints:
   - `201 Created`: Note created successfully.
     - Response body: Created note object.
   - `400 Bad Request`: Missing or invalid input fields.
-  - `401 Unauthorized`: Missing or invalid access token.
+  - `403 Unauthorized`: Missing or invalid access token.
   - `500 Internal Server Error`: Server error.
 
 #### Get All Notes
@@ -67,7 +67,7 @@ Below is the documentation for the API endpoints:
 - **Response:**
   - `200 OK`: Notes retrieved successfully.
     - Response body: Array of note objects.
-  - `401 Unauthorized`: Missing or invalid access token.
+  - `403 Unauthorized`: Missing or invalid access token.
   - `500 Internal Server Error`: Server error.
 
 #### Get Note by ID
@@ -78,7 +78,7 @@ Below is the documentation for the API endpoints:
 - **Response:**
   - `200 OK`: Note retrieved successfully.
     - Response body: Note object.
-  - `401 Unauthorized`: Missing or invalid access token.
+  - `403 Unauthorized`: Missing or invalid access token.
   - `404 Not Found`: Note not found.
   - `500 Internal Server Error`: Server error.
 
@@ -94,7 +94,7 @@ Below is the documentation for the API endpoints:
   - `200 OK`: Note updated successfully.
     - Response body: Updated note object.
   - `400 Bad Request`: Missing or invalid input fields.
-  - `401 Unauthorized`: Missing or invalid access token.
+  - `403 Unauthorized`: Missing or invalid access token.
   - `404 Not Found`: Note not found.
   - `500 Internal Server Error`: Server error.
 
@@ -106,7 +106,7 @@ Below is the documentation for the API endpoints:
 - **Response:**
   - `200 OK`: Note deleted successfully.
     - Response body: `{ message: "Note deleted successfully" }`.
-  - `401 Unauthorized`: Missing or invalid access token.
+  - `403 Unauthorized`: Missing or invalid access token.
   - `404 Not Found`: Note not found.
   - `500 Internal Server Error`: Server error.
 
