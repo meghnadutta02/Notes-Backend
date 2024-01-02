@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "server-prod": "node server.js",
     "server-dev": "nodemon server.js",
     "start": "nodemon server.js",

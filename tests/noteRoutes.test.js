@@ -1,5 +1,5 @@
 import request from "supertest";
-import app from "../server.js";
+import { app, server } from "../server.js";
 
 describe("Authentication", () => {
   let agent; // Declare the agent to persist cookies
@@ -76,6 +76,9 @@ describe("Authentication", () => {
         "message",
         "Note deleted successfully"
       );
+    });
+    afterAll((done) => {
+      server.close(done);
     });
   });
 });

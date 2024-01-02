@@ -33,5 +33,7 @@ app.use((err, req, res) => {
   });
 });
 
-app.listen(8000, () => console.log("Server started at port 8000"));
-export default app;
+const server = app.listen(8000, () =>
+  console.log("Server started at port 8000")
+);
+export { app, server };
