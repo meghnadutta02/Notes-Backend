@@ -8,6 +8,7 @@ describe("Authentication", () => {
     const response = await request(app).post("/api/auth/login").send({
       email: "demo@gmail.com",
       password: "password",
+      doNotLogout: true,
     });
 
     expect(response.statusCode).toBe(200);
