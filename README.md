@@ -1,3 +1,19 @@
+## Environment Variables
+
+Before running the application, make sure to set up your environment variables in a `.env` file at the root of the project. Below are the required variables:
+
+```plaintext
+# .env file
+
+# MongoDB connection string
+MONGODB_URI=your_mongodb_uri
+
+# JWT secret key for authentication
+JWT_SECRET=your_jwt_secret
+
+# Set NODE_ENV to production
+NODE_ENV=production
+
 Below is the documentation for the API endpoints:
 
 ## API Endpoints
@@ -119,3 +135,6 @@ Below is the documentation for the API endpoints:
 
 - Unit tests are available for the authentication and note-related endpoints using Jest and Supertest.
 - Run tests using `npm test`.
+
+
+```
