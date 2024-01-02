@@ -2,7 +2,6 @@
 
 Before running the application, make sure to set up your environment variables in a `.env` file at the root of the project. Below are the required variables:
 
-```plaintext
 # .env file
 
 # MongoDB connection string
